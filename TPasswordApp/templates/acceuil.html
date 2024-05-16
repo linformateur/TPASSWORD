@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>
+Accueil TPASSWORD
+</title>
+<link rel ="stylesheet" type="text/css" href ="{{url_for('static',filename = 'css/accueil.css')}}">
+</head>
+<body>
+<video autoplay muted loop>
+        <source src="{{url_for('static',filename = 'img/FondDynamic2.mp4')}}" type="video/mp4"></video> 
+
+
+        {% extends "base.html" %}
+
+        {%block content%}
+
+  <table>
+  /*
+  <tr colspan ="6">
+  <td colspan="1" width="25%" height="400" align="center">
+	<img src="{{url_for('static',filename = 'img/Logopython.png')}}" alt="Image python" height= "100" width ="150"><br><br><br>
+	<img src="{{url_for('static',filename = 'img/Logohtml.png')}}" alt="Image git" height= "150" width ="150">
+  </td>
+    <td colspan="3" width="50%" height="400" align ="center">
+	<img src= "{{url_for('static',filename = 'img/LogoSite.png')}}"  width ="300" height ="300" >
+  </td>
+    <td colspan="2" width="25%" height="400" align="center">
+	<img src="{{url_for('static',filename = 'img/Logocss.png')}}" alt="Image html" height= "150" width ="150"><br><br><br>
+	<img src="{{url_for('static',filename = 'img/Logogithub.png')}}" alt="Image css" height= "100" width ="150">
+  </td>
+  </tr>
+  */
+  <tr colspan ="6">
+  <td width="25%">
+  <img src="{{url_for('static',filename = 'img/Logouphf.png')}}"alt="Image uphf" height= "150" width ="350" align="left">
+  </td>
+  <td colspan ="3" width="50%">
+	<font size="4" face="bradley hand ITC" align="center" color="#FFFF00">
+	<p>Réalisé par: AKOBI Banconlé-Ismaeil/BOURLET Cyril/DEBREU Romain/DELPECH Nathan </p>
+</td>
+<td width="25%" colspan ="2">
+	<img src= "{{url_for('static',filename = 'img/LogoInsa.png')}}" alt="Image insa" height= "150" width ="300" align="right">
+</td>
+
+  </tr>
+</table>
+
+
+</body>
+
+</html>
+{%endblock%}

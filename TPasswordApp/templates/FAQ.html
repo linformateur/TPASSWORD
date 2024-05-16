@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>FAQ - TPASSWORD</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'css/FAQ.css')}}">
+</head>
+<body>
+
+{%extends "base.html"%}
+
+{%block content%}
+
+<table height ="400"
+       align ="center"
+	   width ="60%"
+	   border="1"
+	   >
+    <tr>
+        <th>Questions</th>
+    </tr>
+    <tr>
+        <td class="question" onclick="toggleAnswer('answer1')" ><span class="arrow" ></span><b>Qu'est-ce qu'un test de robustesse de mot de passe ?</b></td>
+    </tr>
+    <tr>
+        <td class="answer" id="answer1">Un test de robustesse de mot de passe est un processus qui évalue la force d'un mot de passe en vérifiant sa complexité, sa longueur et sa capacité à résister aux attaques de pirates informatiques. Il vise à aider les utilisateurs à créer des mots de passe plus sécurisés pour protéger leurs comptes en ligne.</td>
+    </tr>
+    <tr>
+        <td class="question" onclick="toggleAnswer('answer2')"><span class="arrow"></span><b>Comment fonctionne le test de robustesse de mot de passe sur ce site ?</b></td>
+    </tr>
+    <tr>
+        <td class="answer" id="answer2">Notre site utilise un algorithme sophistiqué pour analyser les mots de passe que vous entrez. Il évalue des facteurs tels que la longueur, la variété des caractères (lettres, chiffres, symboles), l'absence de mots courants, et d'autres critères pour attribuer une note de robustesse à votre mot de passe.</td>
+    </tr>
+    <tr>
+        <td class="question" onclick="toggleAnswer('answer3')"><span class="arrow"></span><b>Mon mot de passe est-il stocké lorsque je l'entre sur ce site ?</b></td>
+    </tr>
+    <tr>
+        <td class="answer" id="answer3">Non, nous ne stockons pas les mots de passe que vous entrez. La sécurité de vos informations est notre priorité, c'est pourquoi nous avons conçu notre système pour ne pas enregistrer ni stocker les mots de passe que vous testez. Vous pouvez utiliser notre service en toute confiance.</td>
+    </tr>
+    <tr>
+        <td class="question" onclick="toggleAnswer('answer4')"><span class="arrow"></span><b>Que faire si mon mot de passe est jugé faible par le test ?</b></td>
+    </tr>
+    <tr>
+        <td class="answer" id="answer4">Si le test de robustesse de mot de passe indique que votre mot de passe est faible, nous vous recommandons vivement d'en créer un plus fort. Suivez nos conseils pour créer un mot de passe sécurisé en utilisant une combinaison de lettres majuscules, de lettres minuscules, de chiffres et de symboles. Évitez d'utiliser des mots courants ou des informations personnelles.</td>
+    </tr>
+    <tr>
+        <td class="question" onclick="toggleAnswer('answer5')"><span class="arrow"></span><b>Puis-je utiliser le même mot de passe pour plusieurs comptes en ligne ?</b></td>
+    </tr>
+    <tr>
+        <td class="answer" id="answer5">Il n'est pas recommandé d'utiliser le même mot de passe pour plusieurs comptes en ligne. Si un de vos comptes est compromis, cela pourrait mettre en danger tous les autres comptes utilisant le même mot de passe. Il est préférable de créer des mots de passe uniques pour chaque compte afin d'augmenter la sécurité de vos informations en ligne.</td>
+    </tr>
+</table>
+    <script src= "{{url_for('static',filename = 'js/FAQ.js')}}"></script>
+
+</body>
+</html>
+
+{%endblock%}

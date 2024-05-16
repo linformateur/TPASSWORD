@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Générateur de Mots de Passe</title>
+    <link rel="stylesheet" href= "{{url_for('static',filename = 'css/generateur.css')}}">
+</head>
+
+{%extends "base.html"%}
+
+{%block content%}
+<body>
+    
+
+    <div class="criteres">
+        <h1>Générateur de Mots de Passe</h1>
+        <div class="caractere">
+            <label><input type="checkbox" id="specials"> Inclure caractères spéciaux</label>
+            <label><input type="checkbox" id="chiffres"> Inclure des chiffres</label>
+            <label><input type="checkbox" id="lettres"> Inclure des lettres<br><br></label>
+            <label for="password-length-range" style="text-decoration:underline; font-size:1.5em">Longueur du Mot de Passe<br><br></label>
+            <input type="range" id="Plage_longueur" min="6" max="24" value="12"><br><br>
+            <input type="text" id="Longueur_choisie" value="12" readonly>
+            <button id="Mdp_genere">Générer un Mot de Passe</button>
+            <button id="copy-password" onclick="copyPassword()">Copier</button>
+            <div id="Sortie"></div>
+        </div>
+    </div>
+	<p>
+	<hr color="black" size="4" size="2" width ="50%">
+	</p>
+	<table bgcolor="black" height ="150">
+	<tr>
+	<td  width ="30%" align ="center" ><img src = "{{url_for('static',filename = 'img/motdepasse.gif')}}" height="150"></td>
+	<td>
+	<font size ="6" color ="white"><i><b>Assurez-vous de stocker votre mot de passe généré dans un endroit sûr. Ne le partagez jamais avec d'autres personnes.</b></i></font>
+	</td>
+	<tr>
+   </table> 
+
+    <script src= "{{url_for('static',filename = 'js/generateur.js')}}"></script>
+</body>
+
+</html>
+{%endblock%}

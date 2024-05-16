@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+	font-style: italic;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.criteres {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type="text"] {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Sortie {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.Faible {
+    background-color: #ff9999;
+}
+
+.Moyen {
+    background-color: #ffcc99;
+}
+
+.Fort {
+    background-color: #99ff99;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    font-family: Cooper Black;
+}
+
+.menu-link:hover {
+    color: red;
+}
+
+.caractere {
+    font-family: Cooper Black;
+}
+
+table {
+    background-size: cover;
+    background-image: url('../img/fondaccueil.jpg') ;
+
+}

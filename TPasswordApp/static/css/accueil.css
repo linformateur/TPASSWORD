@@ -1,0 +1,24 @@
+body {
+            margin: 0; /* Supprimer la marge par défaut du corps */
+            overflow: hidden; /* Empêcher le défilement de la page */
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Placer la vidéo en arrière-plan */
+        }
+	
+    .menu-link {
+        text-decoration: none; /* Supprimer le soulignement par défaut des liens */
+        color: white; /* Couleur du texte non survolé */
+        transition: color 0.3s; /* Animation de transition pour la couleur */
+    }
+
+    .menu-link:hover {
+        color: red; /* Couleur du texte lors du survol */
+    }
